@@ -1,0 +1,53 @@
+body {
+  padding-left: 20px;
+  padding-right: 2px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  row-gap: 30px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-score,
+.highest-score,
+h2 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: rgb(202, 202, 48);
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px black;
+}

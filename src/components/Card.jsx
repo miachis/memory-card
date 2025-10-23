@@ -1,12 +1,12 @@
 export default function Card({ characters }) {
-  return (
-    <div className="card">
-      {characters.map((character) => (
-        <>
-          <img src={character.image} alt={character.name}></img>
-          <button key={character.name}>{character.name}</button>
-        </>
-      ))}
-    </div>
-  );
+  const handleClick = () => {};
+
+  return characters.map((character) => {
+    return (
+      <div className="card" key={character.name} onClick={handleClick}>
+        <img src={character.image} alt={character.name} />
+        <h1>{character.name}</h1>
+      </div>
+    );
+  });
 }

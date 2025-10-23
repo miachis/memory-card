@@ -28,7 +28,7 @@ const characters = [
     image: "/images/Squidward.jpg",
   },
   {
-    name: "Karen The Computer",
+    name: "Karen",
     image: "/images/Karen.jpg",
   },
   {
